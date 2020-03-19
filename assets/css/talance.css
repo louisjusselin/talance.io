@@ -1,0 +1,32 @@
+.tal-btn-red{
+  
+  background: #D24B5E;
+  color: #fff;
+  border : none;
+
+}
+
+.tal-btn-grey{
+  
+  border : none;
+}
+
+.bg-img{
+  
+  background-image: url("../img/backgroundgris.jpg");
+
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.hero-full
+{
+min-height:100vh;
+  }
+
+.espace-15
+{
+padding-top: 7.5%;
+padding-bottom: auto;
+  }
