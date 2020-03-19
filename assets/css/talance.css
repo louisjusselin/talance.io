@@ -35,3 +35,15 @@ padding-bottom: auto;
 
   color: #FFFFFF;
    }
+
+#header.header-scrolled a {
+  color: #F0566B;
+}
+
+#header.header-scrolled .signup  {
+  color: #F0566B;
+  border: 1px solid;
+  background-color: #11ffee00;
+  border-color:#F0566B;
+}
+
