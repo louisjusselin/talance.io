@@ -13,8 +13,7 @@
 
 .bg-img{
   
-  background-image: url("../img/backgroundgris.jpg");
-
+background-image: url("../img/fond_talance3.png");
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -23,6 +22,7 @@ background-size: cover;
 .hero-full
 {
 min-height:100vh;
+
   }
 
 .espace-15
@@ -30,3 +30,8 @@ min-height:100vh;
 padding-top: 7.5%;
 padding-bottom: auto;
   }
+
+.textewhite a { 
+
+  color: #FFFFFF;
+   }
