@@ -1,6 +1,6 @@
 .tal-btn-red{
   
-  background: #D24B5E;
+  background: #F0566B;
   color: #fff;
   border : none;
 
@@ -37,7 +37,6 @@ padding-bottom: auto;
   }
 
 .textewhite a { 
-
   color: #FFFFFF;
    }
 
@@ -45,7 +44,7 @@ padding-bottom: auto;
   color: #F0566B;
 }
 
-#header.header-scrolled .signup  {
+#header.header-scrolled .signup .logo {
   color: #F0566B;
   border: 1px solid;
   background-color: #11ffee00;
@@ -54,4 +53,66 @@ padding-bottom: auto;
 .centre {
 text-align: center; 
 }
+.buttonhomepage {
+  display: inline-block;
+  background-color: #F0566B;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: auto;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 12px;
+}
 
+.buttonhomepageinvert {
+  display: inline-block;
+
+  background-color: #FFFFFF;
+  border: 3px solid;
+  color: #F0566B;
+  text-align: center;
+  font-size: 25px;
+  padding: auto;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 12px;
+
+   border-color:#F0566B;
+}
+
+.buttonhomepage span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonhomepage span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonhomepage:hover span {
+  padding-right: 25px;
+}
+
+.buttonhomepage:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+.sectionwhite{
+ background-color: #FFFFFF;
+  
+}
