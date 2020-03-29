@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "talance-11e21"
+    "default": "talance-11e21",
+    "talance": "talance-11e21"
   }
 }

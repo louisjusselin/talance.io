@@ -48,7 +48,9 @@ padding-bottom: auto;
 .textewhite a { 
   color: #FFFFFF;
    }
-
+.textenormal a { 
+  color: #F0566B;
+   }
 #header.header-scrolled a {
   color: #F0566B;
 }
