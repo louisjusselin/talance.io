@@ -13,8 +13,6 @@
   <link href="assets/img/logoonly.png" rel="icon">
   <link href="assets/img/logoonly.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +40,7 @@
   <!-- Add Firebase products that you want to use -->
   <script src="/__/firebase/7.13.1/firebase-auth.js"></script>
   <script src="/__/firebase/7.13.1/firebase-firestore.js"></script>
-    <script src="/__/firebase/init.js"></script>
+  <script src="/__/firebase/init.js"></script>
 
 
   <!-- ======= Header ======= -->
@@ -55,7 +53,7 @@
        <div class="row">
          <a href="index.html"><img src="assets/img/logoonly.png" alt="" class="img-fluid"></a>
 
-         <h1  >
+         <h1 class="textenormal" >
            <a href="index.html">Talance</a>
          </h1>
        </div>
@@ -86,30 +84,52 @@
     <div class="sign-in" id="sign-in-info">
       <h1>Espace entreprise</h1>
  
-      <p class="small">or use your email account:</p>
-      <form id="sign-in-form">      
-        <input type="email" placeholder="Email"/>
-        <input type="password" placeholder="Password"/>
-        <p class="forgot-password">Forgot your password?</p>
-        <button class="control-button in">Sign In</button>
-      </form>
+     <p class="small">or use your email for registration:</p>
+       <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+      
+
+          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+          &nbsp;&nbsp;&nbsp;
+          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
+          <br/><br/>
+          <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
+          &nbsp;&nbsp;&nbsp;
+          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
+          &nbsp;&nbsp;&nbsp;
+          <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+          &nbsp;&nbsp;&nbsp;
+          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+    </div>
     </div>
 
     <div class="sign-up" id="sign-up-info">
       <h1> Espace experts</h1>
 
       <p class="small">or use your email for registration:</p>
-      <form id="sign-in-form">
-       <input type="email" placeholder="Email"/>
-        <input type="password" placeholder="Password"/>
-        <p class="forgot-password">Forgot your password?</p>
-        <button class="control-button in">Sign In</button>
-      </form>
-    </div>
+       <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+      
 
+          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+          &nbsp;&nbsp;&nbsp;
+          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
+          <br/><br/>
+          <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
+          &nbsp;&nbsp;&nbsp;
+          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
+          &nbsp;&nbsp;&nbsp;
+          <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+          &nbsp;&nbsp;&nbsp;
+          <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+    </div>
+  </div>
 
   </div>
 </div>
+ <div class="quickstart-user-details-container">
+            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+            <div>Firebase auth <code>currentUser</code> object value:</div>
+            <pre><code id="quickstart-account-details">null</code></pre>
+          </div>
 </main><!-- End #main -->
 
 
@@ -128,8 +148,8 @@
 
 <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/auth.js"></script>
-
+    <script src="assets/js/auth_connection.js"></script>
+     <script src="assets/js/auth.js"></script>
 </body>
 
 </html>
